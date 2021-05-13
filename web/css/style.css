@@ -17,21 +17,32 @@ grid {
   grid-gap: 10px;
 }
 
+grid > c[span="row"] {
+  /* grid-column-start: 1;
+  grid-column-end: -1; */
+  grid-column: 1 / -1;
+}
 grid > c {
-  grid-column-start: 1;
-  grid-column-end: -1;
+  overflow: hidden;
 }
 
 c[span="1"] {
   grid-column-end: span 1;
 }
 
-.disc-link {
+a[class^="disc-link__"] {
   width: 100%;
   padding-top: 100%;
-  background-color: lightsteelblue;
   border-radius: 50%;
   display: block;
+}
+
+.disc-link__onahau {
+  background-color: #cce4cf;
+}
+
+.disc-link__granny-apple {
+  background-color: #d4f5e2;
 }
 
 .main-title {
